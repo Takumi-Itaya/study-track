@@ -1,0 +1,22 @@
+# dependencies
+/frontend/node_modules
+
+# production
+/frontend/.next
+/frontend/out
+
+# misc
+.DS_Store
+/frontend*.pem
+
+# local env files
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# vercel
+/frontend/.vercel
+
+# typescript
+/frontend/*.tsbuildinfo
