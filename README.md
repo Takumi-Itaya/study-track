@@ -1,6 +1,6 @@
 # Study Track
 
-学習記録を管理・共有するためのモダンなWebアプリケーションです。学習内容を記録し、タグやカテゴリーで整理して、他の人と共有できます。
+学習記録を管理・共有するためのモダンな Web アプリケーションです。学習内容を記録し、タグやカテゴリーで整理して、他の人と共有できます。
 
 ## 主な機能
 
@@ -15,17 +15,19 @@
 ## 技術スタック
 
 ### フロントエンド
-- **Next.js 16.0** - App Routerを使用したReactフレームワーク
-- **React 19.2** - UIライブラリ
+
+- **Next.js 16.0** - App Router を使用した React フレームワーク
+- **React 19.2** - UI ライブラリ
 - **TypeScript** - 型安全な開発
-- **Tailwind CSS v4** - ユーティリティファーストCSSフレームワーク
-- **shadcn/ui** - Radix UIベースの美しいUIコンポーネント
+- **Tailwind CSS v4** - ユーティリティファースト CSS フレームワーク
+- **shadcn/ui** - Radix UI ベースの美しい UI コンポーネント
 - **React Markdown** - シンタックスハイライト付きマークダウンレンダリング
 - **React Hook Form + Zod** - フォームバリデーション
 - **Recharts** - データビジュアライゼーション
 - **next-themes** - ダークモード対応
 
 ### バックエンド
+
 - 🚧 開発予定
 
 ## セットアップ
@@ -38,18 +40,21 @@
 ### インストール手順
 
 1. リポジトリをクローン
+
 ```bash
 git clone https://github.com/yourusername/study-track.git
 cd study-track
 ```
 
 2. 依存関係をインストール
+
 ```bash
 cd frontend
 pnpm install
 ```
 
 3. 開発サーバーを起動
+
 ```bash
 pnpm dev
 ```
@@ -84,7 +89,43 @@ study-track/
 │   │   └── utils.ts              # ユーティリティ関数
 │   └── public/        # 静的アセット
 ├── backend/           # バックエンドAPI（開発予定）
-└── docs/             # ドキュメント（開発予定）
+├──docs/
+│   ├── architecture/     # システム全体の構造
+│   │   ├── system-overview.md     # システム概要
+│   │   ├── architecture-diagram.md # アーキテクチャ図（Next.js + Spring Boot）
+│   │   └── directory-structure.md  # プロジェクト構成の説明
+│   │
+│   ├── requirements/     # 要件・仕様
+│   │   ├── feature-list.md        # 必要な機能一覧
+│   │   ├── user-stories.md        # ユーザーストーリー
+│   │   └── non-functional.md      # 非機能要件（性能・保守性）
+│   │
+│   ├── design/           # 設計資料（フロント・バック共通）
+│   │   ├── screen-design/         # 画面設計
+│   │   │   ├── screen-flow.md     # 画面遷移図
+│   │   │   └── ui-wireframes.md   # ワイヤーフレーム
+│   │   │
+│   │   ├── api-design/            # API設計
+│   │   │   ├── endpoints.md       # API仕様一覧
+│   │   │   └── request-response.md # Request/Response仕様
+│   │   │
+│   │   ├── db-design/             # DB設計
+│   │   │   ├── er-diagram.md      # ER図
+│   │   │   └── schema.md          # テーブル定義
+│   │   │
+│   │   └── sequence/              # 処理フロー
+│   │       └── sequence-diagrams.md
+│   │
+│   ├── operations/       # 開発運用関連
+│   │   ├── coding-guidelines.md   # コーディング規約（TS/Java）
+│   │   ├── api-guidelines.md      # API命名・方針
+│   │   ├── branch-strategy.md     # Gitブランチ戦略
+│   │   ├── pr-template.md         # PRテンプレート記録
+│   │   └── development-flow.md    # 開発フロー（Issue→Branch→PR の流れ）
+│   │
+│   ├── notes/            # その他メモ・議事録
+│   │   └── meeting-notes.md
+│   ├── onboarding/       # 学習資料
 ```
 
 ## 使い方
@@ -105,14 +146,15 @@ study-track/
 メモ欄では以下のマークダウン記法が使用できます：
 
 ```markdown
-# 見出し1
-## 見出し2
+# 見出し 1
+
+## 見出し 2
 
 **太字**
-*斜体*
+_斜体_
 
-- リスト項目1
-- リスト項目2
+- リスト項目 1
+- リスト項目 2
 
 `インラインコード`
 
@@ -133,7 +175,8 @@ const example = "Hello World";
 🚧 **現在のステータス**: 初期開発段階
 
 ### 実装済み
-- ✅ フロントエンドUI実装
+
+- ✅ フロントエンド UI 実装
 - ✅ 学習記録の作成・表示
 - ✅ マークダウン対応とプレビュー機能
 - ✅ 検索・フィルタリング機能
@@ -141,7 +184,8 @@ const example = "Hello World";
 - ✅ ダークモード
 
 ### 開発予定
-- ⏳ バックエンドAPI
+
+- ⏳ バックエンド API
 - ⏳ ユーザー認証機能
 - ⏳ データベース連携
 - ⏳ 実際のソーシャル機能（いいね・コメント）
@@ -178,12 +222,12 @@ pnpm lint
 
 ## ライセンス
 
-このプロジェクトはMITライセンスの下で公開されています。詳細は [LICENSE](LICENSE) ファイルをご覧ください。
+このプロジェクトは MIT ライセンスの下で公開されています。詳細は [LICENSE](LICENSE) ファイルをご覧ください。
 
 ## 謝辞
 
 - [Next.js](https://nextjs.org/) で構築
-- UIコンポーネントは [shadcn/ui](https://ui.shadcn.com/) を使用
+- UI コンポーネントは [shadcn/ui](https://ui.shadcn.com/) を使用
 - アイコンは [Lucide](https://lucide.dev/) を使用
 
 ---
