@@ -62,15 +62,15 @@ const initialRecords: StudyRecord[] = [
 ]
 
 const tagColors: Record<string, string> = {
-  React: "bg-sky-100 text-sky-700 border-sky-200",
-  JavaScript: "bg-amber-100 text-amber-700 border-amber-200",
-  フロントエンド: "bg-violet-100 text-violet-700 border-violet-200",
-  英語: "bg-emerald-100 text-emerald-700 border-emerald-200",
-  TOEIC: "bg-teal-100 text-teal-700 border-teal-200",
-  単語: "bg-cyan-100 text-cyan-700 border-cyan-200",
-  数学: "bg-rose-100 text-rose-700 border-rose-200",
-  微分: "bg-pink-100 text-pink-700 border-pink-200",
-  応用問題: "bg-fuchsia-100 text-fuchsia-700 border-fuchsia-200",
+  React: "bg-gray-100 text-gray-700 border-gray-300",
+  JavaScript: "bg-gray-200 text-gray-800 border-gray-400",
+  フロントエンド: "bg-gray-100 text-gray-600 border-gray-300",
+  英語: "bg-gray-200 text-gray-700 border-gray-400",
+  TOEIC: "bg-gray-100 text-gray-700 border-gray-300",
+  単語: "bg-gray-200 text-gray-800 border-gray-400",
+  数学: "bg-gray-100 text-gray-700 border-gray-300",
+  微分: "bg-gray-200 text-gray-700 border-gray-400",
+  応用問題: "bg-gray-100 text-gray-600 border-gray-300",
 }
 
 export function StudyRecordList() {
@@ -98,15 +98,15 @@ export function StudyRecordList() {
 
   const getCategoryColor = (category: string) => {
     const colors: Record<string, string> = {
-      プログラミング: "bg-primary/10 text-primary border-primary/20",
-      語学: "bg-accent/30 text-accent-foreground border-accent/40",
-      数学: "bg-secondary text-secondary-foreground border-secondary",
+      プログラミング: "bg-gray-100 text-gray-700 border-gray-300",
+      語学: "bg-gray-200 text-gray-800 border-gray-400",
+      数学: "bg-gray-100 text-gray-600 border-gray-300",
     }
     return colors[category] || "bg-muted text-muted-foreground"
   }
 
   const getTagColor = (tag: string) => {
-    return tagColors[tag] || "bg-slate-100 text-slate-700 border-slate-200"
+    return tagColors[tag] || "bg-gray-100 text-gray-700 border-gray-300"
   }
 
   return (

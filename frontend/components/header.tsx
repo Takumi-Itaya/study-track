@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import {
@@ -11,7 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { BookOpen, User, LogOut, Plus } from "lucide-react"
+import { User, LogOut, Plus } from "lucide-react"
 import { LoginDialog } from "@/components/login-dialog"
 import { useAuth } from "@/lib/auth-context"
 
@@ -23,10 +24,16 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b-2 border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-80">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-            <BookOpen className="h-5 w-5 text-primary" />
+          <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full">
+            <Image
+              src="/study-track-icon.png"
+              alt="Study Track Logo"
+              width={40}
+              height={40}
+              className="h-full w-full object-cover"
+            />
           </div>
-          <span className="font-bold text-xl">学習記録</span>
+          <span className="font-bold text-xl">StudyTrack</span>
         </Link>
 
         <div className="flex items-center gap-3">
