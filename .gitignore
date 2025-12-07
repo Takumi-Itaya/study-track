@@ -4,3 +4,4 @@
 /backend/.gradle/
 *.log
 .env
+desktop.ini
