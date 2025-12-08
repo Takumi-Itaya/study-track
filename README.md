@@ -112,12 +112,10 @@ study-track/
 │   │   │   └── ui-wireframes.md   # ワイヤーフレーム
 │   │   │
 │   │   ├── api-design/            # API設計
-│   │   │   ├── endpoints.md       # API仕様一覧
-│   │   │   └── request-response.md # Request/Response仕様
+│   │   │   └── api.md       # API仕様一覧
 │   │   │
 │   │   ├── db-design/             # DB設計
-│   │   │   ├── er-diagram.md      # ER図
-│   │   │   └── schema.md          # テーブル定義
+│   │   │   └── db-design.md          # ER図とスキーマ設計
 │   │   │
 │   │   └── sequence/              # 処理フロー
 │   │       └── sequence-diagrams.md
@@ -131,7 +129,7 @@ study-track/
 │   │
 │   ├── notes/            # その他メモ・議事録
 │   │   └── meeting-notes.md
-│   ├── onboarding/       # 学習資料
+└───└── onboarding/       # 学習資料
 ```
 
 ## 使い方
