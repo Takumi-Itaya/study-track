@@ -4,7 +4,7 @@
 
 ### ERD 図
 
-![Study Track ERD](./images/study-track-erd.png)
+<img src="./study-track-erd.drawio.png" width= "600px" >
 
 ### エンティティ一覧
 
