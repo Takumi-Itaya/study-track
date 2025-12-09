@@ -247,6 +247,10 @@ pnpm lint
 4. ブランチにプッシュ (`git push origin feature/AmazingFeature`)
 5. プルリクエストを作成
 
+## プレビュー
+
+![Study Track Preview](/docs/onboarding/StudyTrackPreview.gif)
+
 ## ライセンス
 
 このプロジェクトは MIT ライセンスの下で公開されています。詳細は [LICENSE](LICENSE) ファイルをご覧ください。
